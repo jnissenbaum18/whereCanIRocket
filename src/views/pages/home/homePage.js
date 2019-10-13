@@ -1,15 +1,20 @@
-import React from 'react';
-import './homePage.scss';
+import React, { Component } from "react";
+import "./homePage.scss";
 
 import ThreeRenderer from "views/components/threeRenderer/threeRendererComponent";
 
-function homePage() {
-  return (
-    <div className="homePage">
+class homePage extends Component {
+  state = {
+    focused: false
+  }
+  render() {
+    return (
+      <div className="homePage">
         Home Page
-        <ThreeRenderer/>
-    </div>
-  );
+        <ThreeRenderer />
+      </div>
+    );
+  }
 }
 
 export default homePage;
