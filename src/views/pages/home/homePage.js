@@ -6,12 +6,14 @@ import ThreeRenderer from "views/components/threeRenderer/threeRendererComponent
 class homePage extends Component {
   state = {
     focused: false
-  }
+  };
   render() {
     return (
       <div className="homePage">
         Home Page
-        <ThreeRenderer />
+        <div className="home-page__canvas-container">
+          <ThreeRenderer />
+        </div>
       </div>
     );
   }
